@@ -1,0 +1,35 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# IntelliJ
+*.iml
+.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
+
+# Keystore files
+*.jks
+*.keystore
+
+# Android Profiling
+*.hprof
+
+# Default
+.DS_Store
+
+# See more: https://github.com/github/gitignore/blob/main/Android.gitignore
