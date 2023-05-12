@@ -19,6 +19,9 @@ testJunitExt = "1.1.5"
 testEspressoCore = "3.5.1"
 
 [libraries]
+# Project
+android_gradle_plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
+
 #AndroidX
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 androidx-lifecycle-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleCoreKtx" }
