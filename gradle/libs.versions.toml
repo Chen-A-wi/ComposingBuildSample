@@ -3,23 +3,45 @@
 androidGradlePlugin = "8.0.1"
 kotlin = "1.8.20"
 
+# AndroidX
+coreKtx = "1.10.0"
+lifecycleCoreKtx = "2.6.1"
+
 # Compose
 composeBom = "2022.10.00"
 composeActivity = "1.7.1"
 compose = "1.4.3"
 composeMaterial3 = "1.1.0-rc01"
 
+#Test
+testJunit = "4.13.2"
+testJunitExt = "1.1.5"
+testEspressoCore = "3.5.1"
+
 [libraries]
 #AndroidX
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleCoreKtx" }
+
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "composeMaterial3" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 compose-activity = { module = "androidx.activity:activity-compose", version.ref = "composeActivity" }
 compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
+compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+
+# Test
+test-junit = { module = "junit:junit", version.ref = "testJunit" }
+test-junit-ext = { module = "androidx.test.ext:junit", version.ref = "testJunitExt" }
+test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "testEspressoCore" }
 
 [bundles]
 compose = ["compose-activity", "compose-material3", "compose-ui", "compose-ui-graphics", "compose-ui-tooling-preview"]
+androidx = ["androidx-core-ktx", "androidx-lifecycle-ktx"]
+androidx-test = ["test-espresso-core", "test-junit-ext"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
