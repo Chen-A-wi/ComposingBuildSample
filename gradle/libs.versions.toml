@@ -1,0 +1,9 @@
+[versions]
+
+[libraries]
+compose_material3 = { module = "androidx.compose.material3:material3" }
+
+[bundles]
+compose = ["compose_material3"]
+
+[plugins]

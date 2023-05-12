@@ -1,8 +1,11 @@
+include(":app")
+
 pluginManagement {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
+        includeBuild("plugins")
     }
 }
 dependencyResolutionManagement {
@@ -13,4 +16,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ComposingBuildSample"
-include (":app")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
