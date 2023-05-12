@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ComposingBuildSample"
-include ':app'
+include (":app")
