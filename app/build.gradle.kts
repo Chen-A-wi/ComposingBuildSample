@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin)
@@ -5,15 +7,15 @@ plugins {
 
 android {
     namespace = "com.awilab.composingbuildsample"
-    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.awilab.composingbuildsample"
-        minSdk = 24
-        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
+        compileSdk = 33
+        minSdk = 24
+        targetSdk = 33
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true

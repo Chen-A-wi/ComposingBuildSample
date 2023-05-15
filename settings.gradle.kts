@@ -1,11 +1,12 @@
-include(":app")
+@file:Suppress("UnstableApiUsage")
 
 pluginManagement {
+    includeBuild("plugins")
+
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
-        includeBuild("plugins")
     }
 }
 dependencyResolutionManagement {
@@ -16,4 +17,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ComposingBuildSample"
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+include(":app")
