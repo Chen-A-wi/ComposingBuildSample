@@ -8,9 +8,10 @@ coreKtx = "1.10.0"
 lifecycleCoreKtx = "2.6.1"
 
 # Compose
+compose = "1.4.3"
 composeBom = "2022.10.00"
 composeActivity = "1.7.1"
-compose = "1.4.3"
+composeCompiler = "1.4.5"
 composeMaterial3 = "1.1.0-rc01"
 
 #Test

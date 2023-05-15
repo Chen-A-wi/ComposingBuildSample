@@ -26,19 +26,24 @@ android {
             proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.5"
+        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
     }
+
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
@@ -49,7 +54,6 @@ android {
 dependencies {
     implementation(libs.bundles.androidx)
     implementation(libs.bundles.compose)
-    testImplementation(libs.test.junit)
     testImplementation(libs.test.junit)
     androidTestImplementation(libs.bundles.androidx.test)
     androidTestImplementation(platform(libs.compose.bom))
