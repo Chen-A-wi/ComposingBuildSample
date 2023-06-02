@@ -12,3 +12,9 @@ dependencies {
     implementation(libs.gradle.tools.build)
     implementation(libs.kotlin.gradle.plugin)
 }
+
+gradlePlugin {
+    plugins {
+
+    }
+}
