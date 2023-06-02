@@ -10,4 +10,5 @@ repositories {
 
 dependencies {
     implementation(libs.android.gradle.plugin)
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0")
 }

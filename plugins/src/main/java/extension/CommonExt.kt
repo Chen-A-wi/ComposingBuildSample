@@ -4,6 +4,8 @@ import ProjectVersions
 import com.android.build.api.dsl.CommonExtension
 import composeVersion
 import org.gradle.api.artifacts.VersionCatalog
+import org.gradle.api.plugins.ExtensionAware
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 
 fun CommonExtension<*, *, *, *>.androidConfig() {
     defaultConfig {
@@ -28,4 +30,8 @@ fun CommonExtension<*, *, *, *>.composeConfig(libs: VersionCatalog) {
             add("META-INF/LGPL2.1")
         }
     }
+}
+
+fun CommonExtension<*, *, *, *>.kotlinOptions(block: KotlinJvmOptions.() -> Unit) {
+    (this as ExtensionAware).extensions.configure("kotlinOptions", block)
 }

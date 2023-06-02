@@ -1,6 +1,6 @@
 [versions]
 # Project
-androidGradlePlugin = "8.0.1"
+androidGradlePlugin = "8.0.2"
 kotlin = "1.8.20"
 
 # AndroidX
