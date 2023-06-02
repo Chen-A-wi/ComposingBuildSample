@@ -10,6 +10,6 @@ buildscript {
         google()
     }
     dependencies {
-        classpath(libs.android.gradle.plugin)
+        classpath(libs.gradle.tools.build)
     }
 }

@@ -1,7 +1,7 @@
 [versions]
 # Project
-androidGradlePlugin = "8.0.2"
-kotlin = "1.8.20"
+androidPlugin = "8.0.2"
+kotlin = "1.8.21"
 
 # AndroidX
 coreKtx = "1.10.0"
@@ -21,7 +21,8 @@ testEspressoCore = "3.5.1"
 
 [libraries]
 # Project
-android_gradle_plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
+gradle-tools-build = { module = "com.android.tools.build:gradle", version.ref = "androidPlugin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 #AndroidX
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -48,6 +49,6 @@ androidx = ["androidx-core-ktx", "androidx-lifecycle-ktx"]
 androidx-test = ["test-espresso-core", "test-junit-ext"]
 
 [plugins]
-android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
-android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-application = { id = "com.android.application", version.ref = "androidPlugin" }
+android-library = { id = "com.android.library", version.ref = "androidPlugin" }
 jetbrains-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
