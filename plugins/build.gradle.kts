@@ -15,6 +15,9 @@ dependencies {
 
 gradlePlugin {
     plugins {
-
+        create("version") {
+            id = "plugins.versions"
+            implementationClass = "plugins.versions.VersionPlugin"
+        }
     }
 }

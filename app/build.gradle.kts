@@ -3,6 +3,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin)
+    id("plugins.versions")
 }
 
 android {
@@ -13,10 +14,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        compileSdk = 33
-        minSdk = 24
         targetSdk = 33
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }

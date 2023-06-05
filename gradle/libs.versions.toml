@@ -1,7 +1,7 @@
 [versions]
 # Project
 androidPlugin = "8.0.2"
-kotlin = "1.8.21"
+kotlin = "1.8.20"
 
 # AndroidX
 coreKtx = "1.10.0"
