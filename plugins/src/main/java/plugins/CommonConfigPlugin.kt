@@ -2,7 +2,6 @@ package plugins
 
 import com.android.build.api.dsl.ApplicationExtension
 import extension.kotlinOptions
-import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -23,8 +22,8 @@ class CommonConfigPlugin : Plugin<Project> {
                 }
 
                 compileOptions {
-                    sourceCompatibility = JavaVersion.VERSION_17
-                    targetCompatibility = JavaVersion.VERSION_17
+                    sourceCompatibility = Version.jdk
+                    targetCompatibility = Version.jdk
                 }
 
                 packaging {
@@ -35,7 +34,7 @@ class CommonConfigPlugin : Plugin<Project> {
                 }
 
                 kotlinOptions {
-                    jvmTarget = JavaVersion.VERSION_17.toString()
+                    jvmTarget = Version.jdk.toString()
                 }
             }
         }

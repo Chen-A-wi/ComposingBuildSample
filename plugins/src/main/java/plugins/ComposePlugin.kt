@@ -14,7 +14,7 @@ class ComposePlugin : Plugin<Project> {
                 }
 
                 composeOptions {
-                    kotlinCompilerExtensionVersion = "1.4.5"
+                    kotlinCompilerExtensionVersion = Version.composeCompiler
                 }
             }
         }

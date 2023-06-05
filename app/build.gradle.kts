@@ -1,4 +1,5 @@
 @file:Suppress("UnstableApiUsage")
+import plugins.Version
 
 plugins {
     alias(libs.plugins.android.application)
@@ -11,10 +12,10 @@ android {
 
     defaultConfig {
         applicationId = "com.awilab.composingbuildsample"
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = Version.versionCode
+        versionName = Version.versionName
 
-        targetSdk = 33
+        targetSdk = Version.targetSdk
         vectorDrawables {
             useSupportLibrary = true
         }
