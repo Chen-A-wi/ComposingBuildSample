@@ -15,9 +15,13 @@ dependencies {
 
 gradlePlugin {
     plugins {
-        create("version") {
-            id = "plugins.versions"
-            implementationClass = "plugins.versions.VersionPlugin"
+        create("CommonConfig") {
+            id = "plugins.common-config"
+            implementationClass = "plugins.CommonConfigPlugin"
+        }
+        create("Compose") {
+            id = "plugins.compose"
+            implementationClass = "plugins.ComposePlugin"
         }
     }
 }

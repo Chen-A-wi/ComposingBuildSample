@@ -1,19 +1,11 @@
 package extension
 
-import ProjectVersions
 import com.android.build.api.dsl.CommonExtension
-import composeVersion
 import org.gradle.api.artifacts.VersionCatalog
 import org.gradle.api.plugins.ExtensionAware
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
-
-fun CommonExtension<*, *, *, *>.androidConfig() {
-    defaultConfig {
-        compileSdk = ProjectVersions.compileSdk
-        minSdk = ProjectVersions.minSdk
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
-}
+import plugins.Version
+import plugins.composeVersion
 
 fun CommonExtension<*, *, *, *>.composeConfig(libs: VersionCatalog) {
     buildFeatures {

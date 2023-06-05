@@ -14,7 +14,10 @@ composeActivity = "1.7.1"
 composeCompiler = "1.4.5"
 composeMaterial3 = "1.1.0-rc01"
 
-#Test
+# Quality
+ktlint = "0.49.1"
+
+# Test
 testJunit = "4.13.2"
 testJunitExt = "1.1.5"
 testEspressoCore = "3.5.1"
@@ -37,6 +40,9 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = 
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
 compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+
+# Quality
+ktlint = { module = "com.pinterest:ktlint", version.ref = "ktlint" }
 
 # Test
 test-junit = { module = "junit:junit", version.ref = "testJunit" }
