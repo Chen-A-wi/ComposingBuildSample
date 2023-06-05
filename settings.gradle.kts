@@ -1,4 +1,4 @@
-include(":app")
+@file:Suppress("UnstableApiUsage")
 
 pluginManagement {
     repositories {
@@ -16,4 +16,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ComposingBuildSample"
+include(":app")
+
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
