@@ -23,5 +23,9 @@ gradlePlugin {
             id = "plugins.compose"
             implementationClass = "plugins.ComposePlugin"
         }
+        create("Ktlint") {
+            id = "quality.ktlint"
+            implementationClass = "quality.KtlintPlugin"
+        }
     }
 }
