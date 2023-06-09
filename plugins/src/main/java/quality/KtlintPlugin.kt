@@ -1,4 +1,4 @@
-package plugins.ktlint
+package quality
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
