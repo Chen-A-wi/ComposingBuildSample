@@ -1,10 +1,12 @@
 @file:Suppress("UnstableApiUsage")
+
 import plugins.Version
 
 plugins {
     alias(libs.plugins.android.application)
     id("plugins.common-config")
     id("plugins.compose")
+    id("quality.ktlint")
 }
 
 android {
