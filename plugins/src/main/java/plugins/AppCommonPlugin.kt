@@ -7,7 +7,7 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
 
-class CommonConfigPlugin : Plugin<Project> {
+class AppCommonPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             extensions.configure<ApplicationExtension> {

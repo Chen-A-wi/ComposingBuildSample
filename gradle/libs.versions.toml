@@ -5,6 +5,8 @@ kotlin = "1.8.20"
 
 # AndroidX
 coreKtx = "1.10.0"
+appcompat = "1.6.1"
+lifecycle = "2.6.1"
 lifecycleCoreKtx = "2.6.1"
 
 # Compose
@@ -17,6 +19,8 @@ composeMaterial3 = "1.1.0-rc01"
 ktlint = "0.49.1"
 
 # Test
+testTruth = "1.1.4"
+testJunit5 = "5.9.3"
 testJunit = "4.13.2"
 testJunitExt = "1.1.5"
 testEspressoCore = "3.5.1"
@@ -27,8 +31,10 @@ gradle-tools-build = { module = "com.android.tools.build:gradle", version.ref = 
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 
 #AndroidX
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 androidx-lifecycle-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleCoreKtx" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "composeMaterial3" }
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -46,6 +52,10 @@ ktlint = { module = "com.pinterest:ktlint", version.ref = "ktlint" }
 # Test
 test-junit = { module = "junit:junit", version.ref = "testJunit" }
 test-junit-ext = { module = "androidx.test.ext:junit", version.ref = "testJunitExt" }
+test-junit-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "testJunit5" }
+test-junit-jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "testJunit5" }
+test-truth = { module = "com.google.truth:truth", version.ref = "testTruth" }
+test-junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "testJunit5" }
 test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "testEspressoCore" }
 
 [bundles]
