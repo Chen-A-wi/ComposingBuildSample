@@ -11,13 +11,14 @@ repositories {
 dependencies {
     implementation(libs.gradle.tools.build)
     implementation(libs.kotlin.gradle.plugin)
+    implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }
 
 gradlePlugin {
     plugins {
-        create("CommonConfig") {
-            id = "plugins.common-config"
-            implementationClass = "plugins.CommonConfigPlugin"
+        create("AppCommonConfig") {
+            id = "plugins.app-common-config"
+            implementationClass = "plugins.AppCommonPlugin"
         }
         create("Compose") {
             id = "plugins.compose"
