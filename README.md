@@ -1,6 +1,6 @@
 # ComposingBuildSample
 
-It's about composing build with version catalogs sample.
+It's about composing build with version catalogs sample if you want to learn more [click me](https://www.awilab.com).
 
 |            | Without composing build                                    | Composing build                                    |
 |------------|------------------------------------------------------------|----------------------------------------------------|
